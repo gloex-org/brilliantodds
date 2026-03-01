@@ -50,8 +50,12 @@
             z-index: 1000;
             border-bottom: 1px solid #222;
         }
+        .logo-box { display: flex; align-items: center; gap: 10px; }
+        .logo-img { height: 40px; border-radius: 8px; }
+     /* ---   .logo-text { font-family: 'Orbitron', sans-serif; font-size: 1.5rem; letter-spacing: 2px; } --- */
+        
         .logo-text { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--gold); }
-        .logo-img { height: 50px; }
+    /* ---    .logo-img { height: 50px; } --- */
         nav a { color: var(--text-light); text-decoration: none; margin-left: 25px; font-weight: 600; font-size: 0.9rem; }
 
         /* --- Hero Section --- */
@@ -124,7 +128,10 @@
     </div>
 
     <header>
-        <div class="logo-text">Brilliant<span>Odds</span></div>
+        <div class="logo-box">
+            <img src="brilliantlogo.png" alt="Brilliant Odds Logo" class="logo-img" onerror="this.style.display='none'">
+            <div class="logo-text">Brilliant<span>Odds</span></div>
+        </div>
         <nav>
             <a href="#market">Markets</a>
             <a href="#data">Data</a>
