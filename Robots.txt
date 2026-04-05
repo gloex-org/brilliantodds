@@ -1,0 +1,16 @@
+# Robots.txt for BrilliantOdds.com
+# Personalized for EliJul Domain Brokerage
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /brilliantlogo.png
+
+# Prevent crawling of any potential temp or admin folders
+Disallow: /cgi-bin/
+Disallow: /admin/
+Disallow: /private/
+
+# Host and Sitemap location
+Host: https://brilliantodds.com
+Sitemap: https://brilliantodds.com/sitemap.xml
